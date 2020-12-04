@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "dankers-io"
+  "defaultProject": "dankers-io",
+  "cli": {
+    "analytics": "21215095-9a26-4b3f-a087-f22e2be3a9cf"
+  }
 }
