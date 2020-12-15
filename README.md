@@ -31,3 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 https://material-ui.com/
 
 ## using react instead of angular
+
+## plotting
+http://uber.github.io/react-vis/examples/showcases/plots
