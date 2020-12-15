@@ -30,6 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## UI 
 https://material-ui.com/
 
+https://material-ui.com/store/items/paperbase/
+https://www.creative-tim.com/product/material-kit-react
+
 ## using react instead of angular
 
 ## plotting
