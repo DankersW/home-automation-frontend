@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaSimCard, FaRegHandPointer } from "react-icons/fa";
+import { VscSourceControl } from "react-icons/vsc";
+import { AiOutlineMonitor } from "react-icons/ai";
 import { AiFillHome } from "react-icons/ai"
 
 export const SideBarData = [
@@ -10,15 +11,15 @@ export const SideBarData = [
     cName: "nav-text"
   },
   {
-    title: "Reports",
-    path: "/reports",
-    icon: <FaRegHandPointer/>,
+    title: "Monitoring",
+    path: "/monitoring",
+    icon: <AiOutlineMonitor/>,
     cName: "nav-text"
   },
   {
-    title: "Products",
-    path: "/products",
-    icon: <FaSimCard/>,
+    title: "System info",
+    path: "/systeminfo",
+    icon: <VscSourceControl/>,
     cName: "nav-text"
   }
 ]

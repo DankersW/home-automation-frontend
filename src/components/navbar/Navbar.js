@@ -19,7 +19,7 @@ function Navbar() {
           <Link to="#" className="menu-bars">
             <FaBars onClick={toggleSidebar}/>
           </Link>
-          <h2 className="loggo"> Loggo here </h2>
+          <span className="loggo">Dankers-io</span>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={toggleSidebar}>
