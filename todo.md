@@ -1,3 +1,4 @@
 # todo
 
-- connect to backend and getch temp data
+- connect to backend and fetch temp data
+- docker buildx workflow

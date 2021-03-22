@@ -1,7 +1,17 @@
 .Monitoring {
+  padding: 50px 250px 0px 260px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+
+.Monitoring {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
 }
+
+*/
