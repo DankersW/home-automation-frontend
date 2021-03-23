@@ -4,6 +4,8 @@
   justify-content: center;
 }
 
+@import "~react-vis/dist/style";
+
 /*
 
 .Monitoring {
