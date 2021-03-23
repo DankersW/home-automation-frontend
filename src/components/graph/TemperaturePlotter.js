@@ -23,14 +23,13 @@ function TemperaturePlotter() {
         })
     }, []);
 
-
     return (
-        <div className="tempPlot">
-            <div className="plotTitle">
+        <div className="plot-group">
+            <div className="plot-title">
                 <h3>Temperature</h3>
             </div>
             <div className="plot">
-                <XYPlot xType="time" width={700} height={300}>
+                <XYPlot xType="time" width={600} height={275}>
                     <HorizontalGridLines />
                     <LineSeries data={plotData}/>
                     <XAxis />

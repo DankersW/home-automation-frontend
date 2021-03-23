@@ -1,19 +1,16 @@
 @import "~react-vis/dist/style";
 
-.tempPlot {
-    padding-top: 20px;
+.plot-group {
     align-items: center;
     justify-content: center;
 }
 
-
-.plotTitle {
-    padding-left: 40px;
-    display: start;
-    align-items: left;
+.plot-title {
+    text-align: center; 
 }
 
 .plot {
     display: flex;
     align-items: center;
 }
+
