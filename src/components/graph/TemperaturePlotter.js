@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineSeries} from 'react-vis';
+import AutoSizer from 'react-virtualized-auto-sizer'
 import "./TemperaturePlotter.css"
 
 function TemperaturePlotter() {
@@ -28,14 +29,18 @@ function TemperaturePlotter() {
             <div className="plot-title">
                 <h3>Temperature</h3>
             </div>
+            <AutoSizer>
+            {({ width }) => (
             <div className="plot">
-                <XYPlot xType="time" width={600} height={275}>
+                <XYPlot xType="time" width={width} height={275}>
                     <HorizontalGridLines />
-                    <LineSeries data={plotData}/>
+                        <LineSeries data={plotData}/>
                     <XAxis />
                     <YAxis />
                 </XYPlot>
             </div>
+            )}
+            </AutoSizer>
         </div>
     )
 }

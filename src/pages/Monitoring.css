@@ -24,28 +24,16 @@
 
 /* Medium screens */
 @media screen and (min-width: 600px) {
-  .card-tall {
+  .tile-tall {
     grid-row: span 2 / auto;
   }
 
-  .card-wide {
+  .tile-wide {
     grid-column: span 2 / auto;
   }
 }
 
-/*
-
-.Monitoring {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-*/
-
-.card {
+.tile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,10 +52,3 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/*
-.card:hover {
-  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
-  transform: translateY(-3px) scale(1.1);
-}
-*/
