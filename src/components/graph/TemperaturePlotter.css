@@ -1,0 +1,19 @@
+@import "~react-vis/dist/style";
+
+.tempPlot {
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.plotTitle {
+    padding-left: 40px;
+    display: start;
+    align-items: left;
+}
+
+.plot {
+    display: flex;
+    align-items: center;
+}
