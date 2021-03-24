@@ -4,17 +4,20 @@ import LineSeriesPlot from "../components/graph/LineSeriesPlot"
 
 
 function Monitoring() {
+    var config = require('../config');
+    const tempHumiUrl=config.tempHumiUrl
+
     return (
         <div className="monitoring">
             <h1 className="title">Monitoring</h1>
             <div className="monitor-grid">
                 <div class="tile-wide"> 
-                    <LineSeriesPlot title="Temperature" url="http://192.168.1.140:4000/api/temp" xAxis="timestamp" yAxis="temp"/>
+                    <LineSeriesPlot title="Temperature" url={tempHumiUrl} xAxis="timestamp" yAxis="temp"/>
                 </div>
                 <div class="tile ">2</div>
                 <div class="tile ">3</div>
                 <div class="tile-wide"> 
-                    <LineSeriesPlot title="Humidity" url="http://192.168.1.140:4000/api/temp" xAxis="timestamp" yAxis="humi"/>
+                    <LineSeriesPlot title="Humidity" url={tempHumiUrl} xAxis="timestamp" yAxis="humi"/>
                 </div>
                 <div class="tile ">5</div>
                 <div class="tile tile-tall">6</div>
