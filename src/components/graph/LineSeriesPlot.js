@@ -29,16 +29,16 @@ function LineSeriesPlot({title, url, xAxis, yAxis}) {
                 <h3>{title}</h3>
             </div>
             <AutoSizer>
-            {({ width }) => (
-            <div className="plot">
-                <XYPlot xType="time" width={width} height={275}>
-                    <HorizontalGridLines />
-                        <LineSeries data={plotData}/>
-                    <XAxis />
-                    <YAxis />
-                </XYPlot>
-            </div>
-            )}
+                {({ width }) => (
+                    <div className="plot">
+                        <XYPlot xType="time" width={width} height={275}>
+                            <HorizontalGridLines />
+                                <LineSeries data={plotData} curve={'curveMonotoneX'}/>
+                            <XAxis />
+                            <YAxis />
+                        </XYPlot>
+                    </div>
+                )}
             </AutoSizer>
         </div>
     )

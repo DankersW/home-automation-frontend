@@ -1,6 +1,6 @@
 
 .monitoring {
-  margin: 0px 220px 0px 220px;
+  margin: 20px 220px 0px 220px;
   align-items: center;
   justify-content: center;
 }
@@ -12,7 +12,7 @@
 }
 
 .monitor-grid {
-  padding-top: 10px;
+  padding-top: 30px;
   display: grid;
   gap: 1rem;
 
