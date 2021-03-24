@@ -12,7 +12,7 @@ RUN npm install react-scripts@3.4.1 -g
 # add app
 COPY src src/.
 COPY public public/.
-COPY src/config.js src/
+COPY docker/config.js src/.
 
 # start app
 CMD ["npm", "start"]
