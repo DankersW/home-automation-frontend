@@ -1,0 +1,16 @@
+@import "~react-vis/dist/style";
+
+.plot-group {
+    align-items: center;
+    justify-content: center;
+}
+
+.plot-title {
+    text-align: center; 
+}
+
+.plot {
+    display: flex;
+    align-items: center;
+}
+

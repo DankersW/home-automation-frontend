@@ -1,10 +1,33 @@
 import React from "react";
 import "./Monitoring.css"
+import LineSeriesPlot from "../components/graph/LineSeriesPlot"
+
 
 function Monitoring() {
+    var config = require('../config');
+    const tempHumiUrl=config.tempHumiUrl
+
     return (
-        <div className="Monitoring">
-            <h1>Monitoring</h1>
+        <div className="monitoring">
+            <h1 className="title">Monitoring</h1>
+            <div className="monitor-grid">
+                <div class="tile-wide"> 
+                    <LineSeriesPlot title="Temperature" url={tempHumiUrl} xAxis="timestamp" yAxis="temp"/>
+                </div>
+                <div class="tile ">2</div>
+                <div class="tile ">3</div>
+                <div class="tile-wide"> 
+                    <LineSeriesPlot title="Humidity" url={tempHumiUrl} xAxis="timestamp" yAxis="humi"/>
+                </div>
+                <div class="tile ">5</div>
+                <div class="tile tile-tall">6</div>
+                <div class="tile ">7</div>
+                <div class="tile ">8</div>
+                <div class="tile ">9</div>
+                <div class="tile ">10</div>
+                <div class="tile tile-wide tile-tall">11</div>
+                <div class="tile ">12</div>
+            </div>
         </div>
     );
 }
