@@ -1,7 +1,7 @@
 var config = {}
 
-//config.tempHumiUrl="backend:4000/api/temp"
-//config.tempHumiUrl="http://192.168.1.140:4000/api/temp"
-config.tempHumiUrl="/backend"
+const backend = "http://" + window.location.hostname + ":4000"
+
+config.tempHumiUrl= backend + "/api/temp"
 
 module.exports = config;
