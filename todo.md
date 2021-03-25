@@ -5,3 +5,6 @@
 - Configuration file for api address
 - Smarter way of plotting temp and humi when multible names are given
 - Find cool logo and add it to favicon
+
+Create stackoverflow ticket about this issue. 
+- use hardcoded ip address for now
