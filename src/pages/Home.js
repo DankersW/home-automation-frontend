@@ -18,7 +18,11 @@ function Home() {
     return (
         <div className="home-flex-container">
             <h1>Home</h1>
-            <div className="home-links-container">
+            <div className="home-info-container">
+                <h3>Welcome to my home automation system.</h3>
+                <p>
+                    Please find the following links to help you around the system.
+                </p>
                 <ul>
                     {links.map((item, index) => {
                         return (
