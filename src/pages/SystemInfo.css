@@ -1,7 +1,6 @@
-.SystemInfo {
+.system-info-container {
   display: flex;
-  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  flex-direction: column;
 }
