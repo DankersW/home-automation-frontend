@@ -1,7 +1,11 @@
-.home-container {
+.home-flex-container {
    display: flex;
-   height: 90vh;
    align-items: center;
    justify-content: center;
-   font-size: 3rem;
+   flex-direction: column;
+   margin: 0vh 5vw 0vh 5vw;
+}
+
+.home-links-container {
+   width: 60vw;
 }
