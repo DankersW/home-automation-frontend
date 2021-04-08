@@ -3,6 +3,8 @@ import "./Table.css"
 
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from '@material-ui/core';
 
+// todo: pass in table headers, and table data to make the DenseTable companents generic
+
 function createData(name, calories, fat, carbs, protein) {
     return { name, calories, fat, carbs, protein };
   }
