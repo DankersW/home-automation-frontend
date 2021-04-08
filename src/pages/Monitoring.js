@@ -5,7 +5,7 @@ import LineSeriesPlot from "../components/graph/LineSeriesPlot"
 
 function Monitoring() {
     var config = require('../config');
-    const tempHumiUrl=config.tempHumiUrl
+    const tempHumiUrl=config.temp_humi_url
 
     return (
         <div className="monitoring">
