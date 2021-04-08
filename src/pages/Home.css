@@ -1,7 +1,28 @@
-.home {
+.home-flex-container {
    display: flex;
-   height: 90vh;
    align-items: center;
    justify-content: center;
-   font-size: 3rem;
+   flex-direction: column;
+   margin: 0vh 5vw 0vh 5vw;
+}
+
+.home-info-container {
+   width: 60vw;
+}
+
+.home-flex-container h1 {
+   padding-top: 4vh;
+}
+
+.home-flex-container h3 {
+   padding-top: 2vh;
+   padding-bottom: 2vh;
+}
+
+.home-flex-container p {
+   padding-bottom: 1vh;
+}
+
+.home-flex-container li {
+   list-style: none;
 }
