@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Table.css"
 
-import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from '@material-ui/core';
+import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from '@material-ui/core';
 
 // todo: pass in table headers, and table data to make the DenseTable companents generic
 // todo: fetch headers from data index
@@ -18,7 +18,10 @@ function createData(name, calories, fat, carbs, protein) {
     createData('Gingerbread', 356, 16.0, 49, 3.9),
   ];
 
-function DenseTable({table_headers}) {
+function DenseTable({table_headers, table_data}) {
+    console.log(table_data)
+    table_headers = Object.keys(table_data[0])
+    console.log(table_headers)
     return(
         <div className="table-container">
             <TableContainer>
