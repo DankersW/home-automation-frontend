@@ -3,14 +3,16 @@ import "./SystemInfo.css"
 import DenseTable from "./../components/table/Table"
 
 function SystemInfo() {
-    var table_headers = ["","a", "b", "c", "d"]
+    var table_headers = ["x", "y", "z"]
     var table_data = [
         {
+            name: "abc",
             x: "a",
             y: "b",
             z: "c"
         },
         {
+            name: "cde",
             x: "a",
             y: "b",
             z: "c"

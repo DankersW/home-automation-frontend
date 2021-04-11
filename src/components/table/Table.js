@@ -3,48 +3,28 @@ import "./Table.css"
 
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from '@material-ui/core';
 
-// todo: pass in table headers, and table data to make the DenseTable companents generic
-// todo: fetch headers from data index
-
-function createData(name, calories, fat, carbs, protein) {
-    return { name, calories, fat, carbs, protein };
-  }
-  
-  const rows = [
-    createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-    createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-    createData('Eclair', 262, 16.0, 24, 6.0),
-    createData('Cupcake', 305, 3.7, 67, 4.3),
-    createData('Gingerbread', 356, 16.0, 49, 3.9),
-  ];
-
 function DenseTable({table_headers, table_data}) {
-    console.log(table_data)
-    table_headers = Object.keys(table_data[0])
-    console.log(table_headers)
     return(
         <div className="table-container">
             <TableContainer>
                 <Table size="small" aria-label="a dense table">
                     <TableHead>
                         <TableRow>
-                            {table_headers.map((header) => { return (
-                                    <TableCell align="right">{header}</TableCell>)
+                            <TableCell align="center"></TableCell>
+                            {table_headers.map((header_item) => { return (
+                                <TableCell key={'header_cell' + header_item} align="right">{header_item}</TableCell>)
                             })}
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                    {rows.map((row) => (
-                        <TableRow key={row.name}>
-                        <TableCell component="th" scope="row">
-                            {row.name}
-                        </TableCell>
-                        <TableCell align="right">{row.calories}</TableCell>
-                        <TableCell align="right">{row.fat}</TableCell>
-                        <TableCell align="right">{row.carbs}</TableCell>
-                        <TableCell align="right">{row.protein}</TableCell>
-                        </TableRow>
-                    ))}
+                        {table_data.map((row_item) => (
+                            <TableRow key={row_item.name}>
+                            <TableCell component="th" scope="row"> {row_item.name} </TableCell>
+                            {table_headers.map((column_key) => (
+                                <TableCell align="right" key={row_item.name + "_" + column_key}>{row_item[column_key]}</TableCell>
+                            ))}
+                            </TableRow>
+                        ))}
                     </TableBody>
                 </Table>
             </TableContainer>
