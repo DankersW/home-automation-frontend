@@ -1,11 +1,28 @@
 import React from "react";
 import "./SystemInfo.css"
+import DenseTable from "./../components/table/Table"
+
+var docker_data_hearders = ["version", "alias", "uptime", "status", "port"]
+var docker_data = [{name:'front-end', version: "v1.1.3", alias: "frontend", uptime: "546 seconds", status: "running", port: "80"},
+{name:'backend', version: "v1.0.1", alias: "backend", uptime: "30 seconds", status: "running", port: "5000"}]
+
+
 
 function SystemInfo() {
+
     return (
-        <div className="SystemInfo">
+        <div className="system-info-container">
             <h1>System Info</h1>
             <p>docker info, which versions are running, status of each docker container, IP address host, etc.</p>
+            <div className="table-wrapper">
+                <h2>Docker-compose info</h2>
+                <DenseTable table_headers={docker_data_hearders} table_data={docker_data}></DenseTable>
+            </div>
+            <div className="table-wrapper">
+                <h2>Host info (IP address)</h2>
+                <DenseTable table_headers={docker_data_hearders} table_data={docker_data}></DenseTable>
+            </div>
+            
         </div>
     );
 }
