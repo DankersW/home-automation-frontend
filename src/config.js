@@ -1,7 +1,7 @@
 var config = {}
 
-//const hostname = "localhost"
-const hostname = "192.168.1.140"
+const hostname = "localhost"
+//const hostname = "192.168.1.140"
 
 const docker_host = "http://" + hostname
 const backend = docker_host + ":4000"
