@@ -9,9 +9,9 @@ const backend = docker_host + ":4000"
 config.docker_host = docker_host
 
 // TODO: this need to change, also look at prod config
-config.temp_humi_url = backend + "/api/temp"
+config.temp_humi_url = backend + "/api/sensor/data"
 config.api_list = backend + "/api/"
-config.docker_data = backend + "/api/docker_info"   
+config.docker_data = backend + "/api/docker/info"   
 config.mongo_express = docker_host + ":8081" 
 
 module.exports = config;
