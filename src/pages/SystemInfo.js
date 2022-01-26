@@ -16,8 +16,6 @@ function SystemInfo() {
         }
         fetch_data()        
     }, [config.docker_data])
-
-    
     
     return (
         <div className="system-info-container">
