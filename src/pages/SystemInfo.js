@@ -12,7 +12,7 @@ function SystemInfo() {
     React.useEffect(() => {
         const fetch_data = async () => {
             const response = await axios.get(config.docker_data)
-            set_docker_data(response.data.message)
+            set_docker_data(response.data.data)
         }
         fetch_data()        
     }, [config.docker_data])

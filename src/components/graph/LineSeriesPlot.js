@@ -10,7 +10,8 @@ function LineSeriesPlot({title, url, xAxis, yAxis}) {
     React.useEffect(() => {
         axios.get(url)
         .then(response => {
-            const messageData = response.data.message
+            console.log(response)
+            const messageData = response.data.data
             var points = []
             for (var i in messageData){
                 var plotPoint = {x: new Date(messageData[i][xAxis]), y: messageData[i][yAxis]}
